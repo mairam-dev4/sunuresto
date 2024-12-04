@@ -18,12 +18,21 @@
     display: inline-block; 
   }
 
-.reservation{
-    border: 1px solid #ff4500;
+.btn-reservation{
     background-color: #ff4500;
-    padding: 4px;
-    border-radius: 20px 0px;
+    color: black;
+    font-weight: 500;
+    border-color: #FF4500;
+    border-radius: 0 20px;
 }
+
+
+.btn-reservation:hover {
+    border-color:#FF4500 ;
+    background-color: #FF4500;
+    color: #fff;
+}
+
 .bg-cover {
     background-position: center !important;
     background-size: cover !important;
@@ -32,4 +41,30 @@
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/pexels-chanwalrus-958545\ \(1\).jpg);
 
+}
+.hero h1 {
+    color: #FFFFFF;
+}
+.slogan {
+    color: #FFFFFF;
+
+}
+.btn-commander {
+    background-color: #FF4500;
+    color: white;
+    font-weight: 500;
+    border-radius: 0 20px;
+
+}
+.btn-contacter {
+    background-color: white;
+    color: #FF4500;
+    font-weight: 500;
+    border-radius: 0 20px;
+
+}
+
+.btn:hover {
+    background-color: #FF4500;
+    color: black;
 }
