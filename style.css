@@ -3,7 +3,27 @@
     background-size: cover !important;
     background-repeat: no-repeat !important;
 }
-.header {
+.hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/pexels-chanwalrus-958545\ \(1\).jpg);
 
+}
+.hero h1 {
+    color: #FFFFFF;
+}
+.slogan {
+    color: #FFFFFF;
+
+}
+.btn-commander {
+    background-color: #FF4500;
+    color: white;
+}
+.btn-contacter {
+    background-color: white;
+    color: #FF4500;
+}
+
+.btn:hover {
+    background-color: #FF4500;
+    color: black;
 }
