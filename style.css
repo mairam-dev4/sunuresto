@@ -33,14 +33,12 @@
     color: #fff;
 }
 
-.bg-cover {
-    background-position: center !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-}
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/pexels-chanwalrus-958545\ \(1\).jpg);
-
+     background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    height: 98vh;
 }
 .hero h1 {
     color: #FFFFFF;
