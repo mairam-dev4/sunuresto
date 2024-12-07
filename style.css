@@ -1,4 +1,5 @@
 
+
 .logo-resto{
     width: 80px;
     height: 80px;
@@ -40,6 +41,7 @@
 }
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/pexels-chanwalrus-958545\ \(1\).jpg);
+height: 100vh;
 
 }
 .hero h1 {
@@ -67,4 +69,9 @@
 .btn:hover {
     background-color: #FF4500;
     color: black;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
