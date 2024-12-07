@@ -40,6 +40,9 @@
     background-repeat: no-repeat !important;
     height: 98vh;
 }
+.content-hero {
+    padding-top: 40vh;
+}
 .hero h1 {
     color: #FFFFFF;
 }
@@ -50,14 +53,12 @@
 .btn-commander {
     background-color: #FF4500;
     color: white;
-    font-weight: 500;
     border-radius: 0 20px;
 
 }
 .btn-contacter {
     background-color: white;
     color: #FF4500;
-    font-weight: 500;
     border-radius: 0 20px;
 
 }
