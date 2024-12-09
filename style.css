@@ -44,45 +44,85 @@ body{
     background-repeat: no-repeat !important;
     height: 98vh;
 }
+
 .hero h1 {
     color: #FFFFFF;
-   
+   font-size: 98px;
 }
 .slogan {
     color: #FFFFFF;
+    font-size: 20px;
 
 }
 .btn-commander {
     background-color: #FF4500;
     color: white;
-    font-weight: 500;
     border-radius: 0 20px;
-
+   
+    padding: 8px 0px;
 }
 .btn-commander a{
     color: black;
     text-decoration: none;
+    padding: 8px;
+    
+font-weight: bold;
 }
 .btn-contacter {
     background-color: white;
     color: #FF4500;
-    font-weight: 500;
     border-radius: 0 20px;
-
+   
+    padding: 8px 0px;
 }
 .btn-contacter a{
     color: #FF4500;
     text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
 }
 .btn-contacter:hover {
     background-color: #FF4500;
-    color: black;
+}
+.btn-contacter:hover a{
+    color: #fff;
+}
+.btn-commander:hover{
+    background-color: #FF4500;
+}
+.btn-commander:hover a{
+    color: white;
 }
 .row{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-@media screen  and (max-width:1200px) {
-   
+
+
+
+@media screen  and (max-width:992px) {
+    .bouton{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .btn-commander,.btn-contacter {
+        width: 250px;
+        padding: 4px 0px;
+    }
+    .content-hero{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero h1 {
+        color: #FFFFFF;
+       font-size: 40px;
+    }
+   .hero{
+    height: 100vh;
+   }
+
 }
