@@ -1,4 +1,6 @@
-
+body{
+    background-color: #fff5e1;
+}
 
 .logo-resto{
     width: 80px;
@@ -34,18 +36,17 @@
     color: #fff;
 }
 
-.bg-cover {
-    background-position: center !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-}
+
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/pexels-chanwalrus-958545\ \(1\).jpg);
-height: 100vh;
-
+     background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    height: 98vh;
 }
 .hero h1 {
     color: #FFFFFF;
+   
 }
 .slogan {
     color: #FFFFFF;
@@ -58,6 +59,10 @@ height: 100vh;
     border-radius: 0 20px;
 
 }
+.btn-commander a{
+    color: black;
+    text-decoration: none;
+}
 .btn-contacter {
     background-color: white;
     color: #FF4500;
@@ -65,8 +70,11 @@ height: 100vh;
     border-radius: 0 20px;
 
 }
-
-.btn:hover {
+.btn-contacter a{
+    color: #FF4500;
+    text-decoration: none;
+}
+.btn-contacter:hover {
     background-color: #FF4500;
     color: black;
 }
@@ -74,4 +82,7 @@ height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media screen  and (max-width:1200px) {
+   
 }
