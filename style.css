@@ -32,6 +32,10 @@ body{
     background-color: #FF4500;
     color: #fff;
 }
+
+
+
+
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/pexels-chanwalrus-958545\ \(1\).jpg);
      background-position: center !important;
@@ -133,7 +137,7 @@ h2{
 }
 .image-plat{
     border-radius: 20px 20px 0px 0px;
-    height: 250px;
+    height: 180px;
 }
 
 .mes-plats{
@@ -147,7 +151,7 @@ h2{
 .box{
     display: flex;
     flex-direction: column;
-    width: 30.33%;
+    width: 30%;
     border: solid 1px black;
     border-radius: 20px;
     box-shadow: 2px 2px 2px 2px gray;
