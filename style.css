@@ -159,6 +159,16 @@ h2{
     font-weight: bold;
     font-size: 20px;
 }
+.jaune-orange{
+    background-color: #FFC107;
+}
+.plus{
+    float: inline-end;
+    background-color: #FF4500;
+    border-radius: 100%;
+    padding: 10px;
+    margin: 10px;
+}
 @media screen  and (max-width:1200px){
     .mes-plats{
         display: flex;
