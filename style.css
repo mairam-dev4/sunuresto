@@ -8,11 +8,13 @@ body{
     border-radius: 100%;
 }
 /* section navbar*/
+
 .navbar-nav{
    align-items: baseline;
     display: flex; 
     justify-content: center;
     font-weight: bold;
+   
 }
 .navbar-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='black' stroke-width='3'  d='M4 7h26M4 15h26M4 23h26'/%3E%3C/svg%3E");
@@ -169,6 +171,50 @@ h2{
     color: #ff5722;
 }
 
+.boisson-dessert{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px;
+    width: 100%;
+
+}
+.dessert-item,.boisson-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+   
+}
+
+.titre-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0px;
+}
+i{
+    padding: 0px;
+    margin: 0px;
+    font-size: 60px;
+    font-weight: 60px;
+}
+table {
+    border-collapse: collapse; 
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  td + td {
+    padding-left: 100px; 
+  }
+td, tr{
+    padding: 8px;
+   
+}
+
 /*offre special*/
 .jaune-orange{
     background-color: #FFC107;
@@ -199,6 +245,55 @@ h2{
 .separateur{border: solid 2px black;
 
 }
+
+
+
+
+.boisson-dessert{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 80px;
+}
+.dessert-item,.boisson-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+   
+}
+
+.titre-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0px;
+}
+i{
+    padding: 0px;
+    margin: 0px;
+    font-size: 60px;
+    font-weight: 60px;
+}
+table {
+    border-collapse: collapse; 
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  td + td {
+    padding-left: 140px; 
+  }
+td, tr{
+    padding: 8px;}
+
+
+
+
+
+
 
 
 @media screen  and (max-width:992px){
@@ -240,9 +335,6 @@ h2{
 
 
 
-
-
-
     .jaune-orange{
         background-color: #FFC107;
         width: 80%;
@@ -273,10 +365,25 @@ h2{
     }
 
 
+    .boisson-dessert{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        padding: 4px 0px;
+        
+    }
+    .boisson-item,.dessert-item{
+        width: 100%;
+        padding-left: 80px;
+      
 
+    }
+   
 
+    
 
-
+  
 }
 @media screen  and (max-width:576px){
     .mes-plats{
@@ -341,4 +448,21 @@ h2{
         padding: 8px 0px;
     }
 
+    
+
+    .boisson-dessert{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        font-size: small;
+        
+    }
+    .boisson-item,.dessert-item{
+        width: 100%;
+        padding-left: 30px;
+      
+
+    }
+  
 }
