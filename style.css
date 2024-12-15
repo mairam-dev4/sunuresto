@@ -34,10 +34,6 @@ body{
     background-color: #FF4500;
     color: #fff;
 }
-
-
-
-
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/pexels-chanwalrus-958545\ \(1\).jpg);
      background-position: center !important;
@@ -45,15 +41,6 @@ body{
     background-repeat: no-repeat !important;
     height: 98vh;
     margin: 0px;
-}
-
-.hero h1 {
-    color: #FFFFFF;
-   font-size: 98px;
-}
-.slogan {
-    color: #FFFFFF;
-    font-size: 20px;
 }
 .btn-commander {
     background-color: #FF4500;
@@ -65,7 +52,6 @@ body{
     color: black;
     text-decoration: none;
     padding: 8px;
-    
 font-weight: bold;
 }
 .btn-contacter {
@@ -98,96 +84,13 @@ font-weight: bold;
     align-items: center;
     margin: 0px;
 }
-
-@media screen  and (max-width:992px) {
-    .bouton{
-        display: flex;
-        flex-direction: column;
-
-    }
-    .btn-commander,.btn-contacter {
-        width: 250px;
-        padding: 4px 0px;
-    }
-    .content-hero{
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .hero h1 {
-        color: #FFFFFF;
-       font-size: 40px;
-    }
-   .hero{
-    height: 100vh;
-   }
-}
 /*section menu et offres speciales*/
 h2{
     text-align: center;
     text-decoration: underline;
     text-decoration-color: #ff4500;
     text-decoration-thickness: 3px;
-
 }
-.menu{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   justify-content: center;
-   padding: 40px 0px;
-}
-.image-plat{
-    border-radius: 20px 20px 0px 0px;
-    height: 180px;
-}
-
-.mes-plats{
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   justify-content: center;
-   gap: 20px;
-   padding: 40px 0px;
-   width: 90%;
-}
-.box{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 480px;
-    border: solid 1px black;
-    border-radius: 20px;
-    box-shadow: 2px 2px 2px 2px gray;
-}
-.box-text{
-    padding: 16px;
-    
-}
-.prix-plat{
-    font-weight: bold;
-    font-size: 22px;
-    color: #ff5722;
-}
-
-.boisson-dessert{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px 100px;
-    width: 100%;
-
-}
-.dessert-item,.boisson-item{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 50%;
-   
-}
-
 .titre-icon{
     display: flex;
     flex-direction: row;
@@ -195,8 +98,7 @@ h2{
     gap: 10px;
     padding: 20px 0px;
 }
-.wine
-.cake{
+.wine,.cake{
     padding: 0px;
     margin: 0px;
     font-size: 60px;
@@ -207,19 +109,20 @@ table {
     margin: 0px;
     padding: 0px;
   }
-  
-  td + td {
-    padding-left: 100px; 
+td + td {
+    padding-left: 140px; 
   }
 td, tr{
     padding: 8px;
-   
+}
+/*offre special*/
+
+.separateur{
+    border: solid 2px black;
 }
 
-/*offre special*/
 .jaune-orange{
     background-color: #FFC107;
-    width: 45%;
     padding: 24px;
     border-radius: 20px;
 }
@@ -230,66 +133,6 @@ td, tr{
     padding: 10px;
     margin: 10px;
 }
-.plat-special{
-    width: 400px;
-    height: 400px;
-}
-.container{
-    display: flex;
-    flex-direction:row;
-    justify-content: space-around;
-    align-items: center;
-    width: 90%;
-    height: auto;
-    padding: 40px 0px;
-}
-.separateur{border: solid 2px black;
-
-}
-
-
-
-
-.boisson-dessert{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    gap: 80px;
-}
-.dessert-item,.boisson-item{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 50%;
-   
-}
-
-.titre-icon{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    padding: 20px 0px;
-}
-.wine
-.cake{
-    padding: 0px;
-    margin: 0px;
-    font-size: 60px;
-    font-weight: 60px;
-}
-table {
-    border-collapse: collapse; 
-    margin: 0px;
-    padding: 0px;
-  }
-  
-  td + td {
-    padding-left: 140px; 
-  }
-td, tr{
-    padding: 8px;}
 
 
 
@@ -298,166 +141,4 @@ td, tr{
 
 
 
-@media screen  and (max-width:992px){
-    .mes-plats{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        padding: 40px;
-    }
-    .box{
-        display: flex;
-       height: auto;
-        width: 45%;
-    }
-    .box:hover {
-        transform: scale(1.05);
-        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .image-plat{
-        display: block;
-        margin: 0px auto;
-        padding: 20px;
-        border-radius: 100%;
-        max-width: 100%;
-    }
-    .menu{
-        display: flex;
-        flex-direction: column;
-        justify-content:space-between ;
-        align-items: center;
-        width: 100%;
-        gap: 4px;
-    }
-    .box-text{
-        padding: 8px;
-       
-    }
 
-
-
-    .jaune-orange{
-        background-color: #FFC107;
-        width: 80%;
-        height: auto;
-        padding: 40px;
-        border-radius: 20px;
-    }
-    .plus{
-        float: inline-end;
-        background-color: #FF4500;
-        border-radius: 100%;
-        padding: 10px;
-        margin: 10px;
-    }
-    .plat-special{
-        width: 400px;
-        height: 400px;
-        margin: 0px;
-        padding: 0px;
-    }
-    .container{
-        display: flex;
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 8px 0px;
-    }
-
-
-    .boisson-dessert{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 4px;
-        padding: 4px 0px;
-        
-    }
-    .boisson-item,.dessert-item{
-        width: 100%;
-        padding-left: 80px;
-      
-
-    }
-   
-
-    
-
-  
-}
-@media screen  and (max-width:576px){
-    .mes-plats{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 8px;
-    }
-    .box{
-        display: flex;
-       height: auto;
-        width: 80%;
-    }
-    .image-plat{
-        display: block;
-        margin: 0px auto;
-        padding: 20px;
-        border-radius: 100%;
-        max-width: 100%;
-    }
-    .menu{
-        display: flex;
-        flex-direction: column;
-        justify-content:space-between ;
-        align-items: center;
-        width: 100%;
-        gap: 4px;
-    }
-    .box-text{
-        padding: 8px;
-    }
-
-
-
-
-    .jaune-orange{
-        background-color: #FFC107;
-        width: 80%;
-        height: auto;
-        padding: 40px;
-        border-radius: 20px;
-    }
-    .plus{
-        float: inline-end;
-        background-color: #FF4500;
-        border-radius: 100%;
-        padding: 10px;
-        margin: 10px;
-    }
-    .plat-special{
-        width: 280px;
-        height: 280px;
-        margin: 0px;
-        padding: 0px;
-    }
-   
-
-    
-
-    .boisson-dessert{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 4px;
-        font-size: small;
-        
-    }
-    .boisson-item,.dessert-item{
-        width: 100%;
-        padding-left: 30px;
-      
-
-    }
-  
-}
