@@ -149,7 +149,28 @@
                   <h3>PAELLA</h3>
                   <p class="description-plat">La Paëlla Sénégalaise est un plat savoureux et généreux, inspiré de la célèbre recette espagnole mais revisité avec des ingrédients et des épices typiques du Sénégal. Ce plat met en valeur un mélange de fruits de mer (crevettes, moules, calamars) ou de poulet, accompagné de riz parfumé aux épices locales comme le poivre noir, le piment doux, et l'ail.</p>
                   <p class="prix-plat">3000 FCFA</p>
-                  <i class="fa-solid fa-plus plus "></i>
+                  <div class="">
+                    <i class="fa-solid fa-plus plus" data-bs-toggle="collapse" data-bs-target="#offerDetails" aria-expanded="false" aria-controls="offerDetails"></i>
+                    <div class="collapse" id="offerDetails">
+                      <div class="card card-body">
+                        <label for="choixOffre">Choisissez une boisson ou un dessert gratuit :</label>
+                        <select class="form-select" id="choixOffre" onchange="updateOptions()">
+                            <option value="boisson">Boisson</option>
+                            <option value="dessert">Dessert</option>
+                        </select>
+                        <div id="optionsListe">
+                            <!-- Options boisson ou dessert seront ici -->
+                        </div>
+                        <button class="btn btn-success btn-validate" onclick="validateOffer()">Valider l'offre</button>
+                        <button class="btn btn-success mt-3" onclick="ajouterAuPanier()">Ajouter au Panier</button>
+                    </div>
+                    <div id="panier" class="mt-4">
+            <h3>Panier</h3>
+            <ul id="panier-list"></ul>
+            <button class="btn btn-primary" onclick="finaliserPanier()">Valider l'offre spéciale</button>
+        </div>
+                </div>
+                  </div> 
               </div>
             </div>
           </div>
@@ -255,7 +276,14 @@
 
     </section><!-- /Specials Section -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
 
-</body>
+
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+
+  </body>
 </html>
