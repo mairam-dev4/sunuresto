@@ -91,30 +91,6 @@ h2{
     text-decoration-color: #ff4500;
     text-decoration-thickness: 3px;
 }
-.titre-icon{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    padding: 20px 0px;
-}
-.wine,.cake{
-    padding: 0px;
-    margin: 0px;
-    font-size: 60px;
-    font-weight: 60px;
-}
-table {
-    border-collapse: collapse; 
-    margin: 0px;
-    padding: 0px;
-  }
-td + td {
-    padding-left: 140px; 
-  }
-td, tr{
-    padding: 8px;
-}
 /*offre special*/
 
 .separateur{
@@ -133,234 +109,81 @@ td, tr{
     padding: 10px;
     margin: 10px;
 }
-.plat-special{
-    width: 400px;
-    height: 400px;
+
+.list-group-item:active{
+    background-color: #FFC107;
 }
-.container{
-    display: flex;
-    flex-direction:row;
-    justify-content: space-around;
-    align-items: center;
-    width: 90%;
-    height: auto;
+.list-group-item.active {
+    background-color:#FFC107 ; 
+    color: black; 
+    font-weight: bold;
+    border-color: #ff4500; 
+}
+
+
+.nos-menu h1{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #ff4500;
+    text-decoration-thickness: 3px;
+    padding-bottom: 8px;
+}
+.dess{
+    padding: 0px 120px;
+}
+.tab-pan {
+    background-color: #fff;
+    border: black;
+    box-shadow: gray ;
+    padding: 4px 0px;
+}
+.textra {
+    height: 140px;
+    
+}
+.formulaire{
+    background-color: #FFC107;
+}
+.formulaire .row{
+    background-color: #d9a406;
+    padding: 16px 8px;
+}
+.formulaire .btn{
+    background-color: #FF4500;
+    font-weight: bold;
+    color:black;
+    border-color: #FF4500;
+}
+.nos-boissons{
     padding: 40px 0px;
 }
-.separateur{border: solid 2px black;
-
+.nos-plats{
+    padding: 40px 0px;
+}
+.nos-menu button{
+    background-color: #FFC107;
+    font-weight: bold;
+    color:black;
+    border-color: #FFC107;
+padding: 4px;
+border-radius: 4px;
+}
+.nos-menu a{
+    text-decoration: none;
+    color: black;
+}
+.price{
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+.menu .btn{
+    background-color: #FF4500;
+    border-color: #FF4500;
+}
+@media screen and (max-width: 768px) {
+    .dess{
+        padding: 0px 40px;
+    }
 }
 
-
-
-
-.boisson-dessert{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    gap: 80px;
-}
-.dessert-item,.boisson-item{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 50%;
-   
-}
-
-.titre-icon{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    padding: 20px 0px;
-}
-.wine
-.cake{
-    padding: 0px;
-    margin: 0px;
-    font-size: 60px;
-    font-weight: 60px;
-}
-table {
-    border-collapse: collapse; 
-    margin: 0px;
-    padding: 0px;
-  }
-  
-  td + td {
-    padding-left: 140px; 
-  }
-td, tr{
-    padding: 8px;}
-
-
-
-
-
-
-
-
-@media screen  and (max-width:992px){
-    .mes-plats{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        padding: 40px;
-    }
-    .box{
-        display: flex;
-       height: auto;
-        width: 45%;
-    }
-    .box:hover {
-        transform: scale(1.05);
-        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .image-plat{
-        display: block;
-        margin: 0px auto;
-        padding: 20px;
-        border-radius: 100%;
-        max-width: 100%;
-    }
-    .menu{
-        display: flex;
-        flex-direction: column;
-        justify-content:space-between ;
-        align-items: center;
-        width: 100%;
-        gap: 4px;
-    }
-    .box-text{
-        padding: 8px;
-       
-    }
-
-
-
-    .jaune-orange{
-        background-color: #FFC107;
-        width: 80%;
-        height: auto;
-        padding: 40px;
-        border-radius: 20px;
-    }
-    .plus{
-        float: inline-end;
-        background-color: #FF4500;
-        border-radius: 100%;
-        padding: 10px;
-        margin: 10px;
-    }
-    .plat-special{
-        width: 400px;
-        height: 400px;
-        margin: 0px;
-        padding: 0px;
-    }
-    .container{
-        display: flex;
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 8px 0px;
-    }
-
-
-    .boisson-dessert{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 4px;
-        padding: 4px 0px;
-        
-    }
-    .boisson-item,.dessert-item{
-        width: 100%;
-        padding-left: 80px;
-      
-
-    }
-   
-
-    
-
-  
-}
-@media screen  and (max-width:576px){
-    .mes-plats{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 8px;
-    }
-    .box{
-        display: flex;
-       height: auto;
-        width: 80%;
-    }
-    .image-plat{
-        display: block;
-        margin: 0px auto;
-        padding: 20px;
-        border-radius: 100%;
-        max-width: 100%;
-    }
-    .menu{
-        display: flex;
-        flex-direction: column;
-        justify-content:space-between ;
-        align-items: center;
-        width: 100%;
-        gap: 4px;
-    }
-    .box-text{
-        padding: 8px;
-    }
-
-
-
-
-    .jaune-orange{
-        background-color: #FFC107;
-        width: 80%;
-        height: auto;
-        padding: 40px;
-        border-radius: 20px;
-    }
-    .plus{
-        float: inline-end;
-        background-color: #FF4500;
-        border-radius: 100%;
-        padding: 10px;
-        margin: 10px;
-    }
-    .plat-special{
-        width: 280px;
-        height: 280px;
-        margin: 0px;
-        padding: 0px;
-    }
-   
-
-    
-
-    .boisson-dessert{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 4px;
-        font-size: small;
-        
-    }
-    .boisson-item,.dessert-item{
-        width: 100%;
-        padding-left: 30px;
-      
-
-    }
-  
-}
