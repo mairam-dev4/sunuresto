@@ -30,9 +30,9 @@
                     </button>
           
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="../sunuresto/menu-complet.html#boisson">Boissons</a></li>
-                      <li><a class="dropdown-item" href="#menu">Nos Plats</a></li>
-                      <li><a class="dropdown-item" href="../sunuresto/menu-complet.html#dessert">Dessert</a></li>
+                      <li><a class="dropdown-item" href="../sunuresto/menu-complet.html#nos-boissons">Boissons</a></li>
+                      <li><a class="dropdown-item" href="../sunuresto/menu-complet.html#nos-plats">Nos Plats</a></li>
+                      <li><a class="dropdown-item" href="../sunuresto/menu-complet.html#nos-dessert">Dessert</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
@@ -67,7 +67,7 @@
             </div>
           </div>
         </section>
-        <section class="menu pt-5" id="menu">
+        <section class="menu pt-4" id="menu">
           <h2>DECOUVREZ NOTRE MENU</h2>
           <div class="container py-5">
             <div class="row g-4">
@@ -76,8 +76,9 @@
                       <img src="images/Big-double.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                          <h4 class="card-title">Double Burger</h4>
-                         <p class="card-text">Un délicieux sandwich double couche composé de deux steaks juteux, parfaitement grillés, accompagnés de fromage fondant, de laitue croquante, de tomates fraîches et de sauce</p>
-                         <p class="">2000</p>
+                         <p class="card-text">Un délicieux sandwich double couche composé de deux steaks juteux, parfaitement grillés, accompagnés de fromage fondant, de laitue croquante, de tomates fraîches et de sauce </p>
+                         <p class="price">2000 FCFA</p>
+                         <a href="#" class="btn btn-primary">commander</a>
                       </div>
                   </div>
                 </div>
@@ -87,7 +88,8 @@
                       <div class="card-body">
                         <h4 class="card-title">Pizza Pimento</h4>
                         <p class="card-text">Une pizza savoureuse et épicée, parfaite pour les amateurs de sensations fortes ! Garnie de sauce tomate, de fromage fondant, de viandes ou de légumes frais, et relevée avec une touche, </p>
-                        <p class="">1500</p>
+                        <p class="price">1500 FCFA</p>
+                        <a href="#" class="btn btn-primary">commander</a>
                       </div>
                   </div>
                 </div>
@@ -97,7 +99,8 @@
                        <div class="card-body">
                          <h4 class="card-title">Riz au Poisson</h4>
                          <p class="card-text">Un plat emblématique composé de riz parfumé et accompagné d’un poisson frais, souvent mijoté dans une sauce savoureuse à base de tomates, d’oignons, de légumes variés et d'épices.</p>
-                        <p class="">2000</p>
+                        <p class="price">2000 FCFA</p>
+                        <a href="#" class="btn btn-primary">commander</a>
                        </div>
                   </div>
                 </div>
@@ -107,7 +110,8 @@
                      <div class="card-body">
                        <h4 class="card-title">Mafé</h4>
                        <p class="card-text">Un plat incontournable à base de viande (ou poisson) cuite lentement dans une sauce onctueuse aux arachides, rehaussée de légumes comme le gombo, la carotte ou l’aubergine. Servi avec du riz </p>
-                       <p class="">2000</p>
+                       <p class="price">2000 FCFA</p>
+                       <a href="#" class="btn btn-primary">commander</a>
                     </div>
                   </div>
                 </div>             
@@ -118,7 +122,8 @@
                          <div class="card-body">
                            <h4 class="card-title">Yassa Poulet</h4>
                            <p class="card-text">Un classique de la cuisine sénégalaise, le Yassa Poulet est composé de morceaux de poulet marinés dans un mélange de citron, d'oignons et d'épices, puis grillés et mijotés dans une sauce .</p>
-                           <p class="">2500</p>
+                           <p class="price">2500 FCFA</p>
+                           <a href="#" class="btn btn-primary">commander</a>
                         </div>
                      </div>
                 </div>             
@@ -128,7 +133,8 @@
                       <div class="card-body">
                         <h4 class="card-title">Soupou Kandia</h4>
                         <p class="card-text">Le Soupou Kandia est un ragoût à base de gombo, souvent préparé avec du poisson ou de la viande. Sa sauce épaisse et légèrement visqueuse est parfumée avec des épices locales, des légumes .</p>
-                        <p>2000</p>
+                        <p class="price">2000 FCFA</p>
+                        <a href="#" class="btn btn-primary">commander</a>
                       </div>
                 </div>
                 </div>
@@ -274,7 +280,67 @@
 
       </div>
 
-    </section><!-- /Specials Section -->
+    </section> 
+    <section class="resrvation d-flex align-items-center justify-content-center py-xxl-5" id="reservation">
+      <form action="page.php" method="post" class="formulaire  mx-auto  p-5 shadow rounded">
+        <h2 class="text-center mb-4">Réservez votre table</h2>
+
+
+        <div class="row ">
+              <div class="col-lg-6 col-sm-12 mb-3">
+                 <label for="prenom" class="form-label">Prenom</label>
+                 <input type="text" class="form-control" placeholder="Entrer votre prenom" required>
+              </div>
+              <div class="col-lg-6 col-sm-12 mb-3">
+                <label for="nom" class="form-label">Nom</label>
+                <input type="text" class="form-control" placeholder="Entre votre nom " required>
+             </div>
+             
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-sm-12">
+             <label for="date-reservation" class="form-label">Date de la réservation</label>
+             <input type="date" class="form-control" id="date-reservation" name="date" required>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <label for="heure-reservation" class="form-label">Heure de la réservation</label>
+              <input type="time" class="form-control" id="heure-reservation" name="time" required>
+            </div>
+          </div>
+          
+          <div class="row ">
+            <div class="mt-3 col-lg-6 col-sm-12" >
+              <label for="email" class="form-label">Adresse email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Ex : exemple@email.com" required>
+            </div>
+            <div class="col-lg-6 col-sm-12 mt-3">
+              <label for="telephone" class="form-label">Numéro de téléphone</label>
+              <input type="tel" class="form-control" id="telephone" name="phone" placeholder="Ex : +221 77 123 45 67" required>
+           </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-lg-12 mt-3">
+              <label for="nombre-personnes" class="form-label">Nombre de personnes</label>
+              <input type="number" class="form-control" id="nombre-personnes" name="guests" min="1" max="30" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 mt-4 ">
+              <textarea class="form-control textra " placeholder="Votre message" id="floatingTextarea"></textarea>
+             
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-lg-12 d-flex justify-content-end">
+              <button class="btn btn-primary" type="submit">RESERVER</button>
+            </div>
+          
+          </div>
+      </form>
+    </section>
+  
 
     
 

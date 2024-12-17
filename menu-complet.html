@@ -13,7 +13,7 @@
     <section class="container-fluid " id="acceuil">
         <nav class="container navbar navbar-expand-lg navbar-dark py-0 ">
             <div class="container-fluid">
-              <a class="navbar-brand " href="#"><img src="images/logo-resto.webp" alt="" class="logo-resto"></a>
+              <a class="navbar-brand " href="../sunuresto/index.html#acceuil"><img src="images/logo-resto.webp" alt="" class="logo-resto"></a>
               <!-- Bouton du menu hamburger -->
               <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon "></span>
@@ -30,9 +30,9 @@
                     </button>
           
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#boisson-dessert">Boissons</a></li>
-                      <li><a class="dropdown-item" href="../sunuresto/index.html#menu">Nos Plats</a></li>
-                      <li><a class="dropdown-item" href="#boisson-dessert">Dessert</a></li>
+                      <li><a class="dropdown-item" href="#nos-boissons">Boissons</a></li>
+                      <li><a class="dropdown-item" href="#nos-plats">Nos Plats</a></li>
+                      <li><a class="dropdown-item" href="#nos-desserts">Dessert</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
@@ -53,151 +53,268 @@
             </div>
           </nav> 
         </section>
-        <section class="menu" id="menu">
-            <h2>DECOUVREZ NOTRE MENU</h2>
-            <div class="container py-5">
-                <div class="row  ">
-                  <div class="card col-lg-4 col-md-6 col-sm-12 " >
-                    <img src="images/Big-double.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title">Double Burger</h4>
-                      <p class="card-text">Un délicieux sandwich double couche composé de deux steaks juteux, parfaitement grillés, accompagnés de fromage fondant, de laitue croquante, de tomates fraîches et de sauce</p>
-                      <a href="#" class="btn btn-primary">Commander</a>
-                    </div>
+        <section class="nos-menu">
+          <h1 class="text-center pt-4">Les delices de Sunuresto</h1>
+          <div class="dess">
+            <p>Découvrez un assortiment unique de plats savoureux, élaborés avec soin pour ravir vos papilles. Que ce soit pour un repas rapide ou une expérience culinaire complète, nos délices vous garantissent des saveurs inoubliables.</p>
+            <p>Savourez la fraîcheur de nos jus naturels, pressés à partir de fruits soigneusement sélectionnés. Une explosion de vitamines et de fraîcheur pour accompagner vos repas ou simplement pour vous désaltérer.</p>
+            <p>Des mets traditionnels aux recettes modernes, nos plats sont conçus pour satisfaire tous les goûts. Chaque assiette est une parfaite harmonie de saveurs, de qualité et de générosité.</p>
+            <p>Terminez votre repas sur une note douce avec nos desserts gourmands. Des créations sucrées faites maison qui allient simplicité, élégance et plaisir.</p>
+          </div>
+          <hr>
+          <div class="nos-plats" id="nos-plats">
+            <h2>Nos plats</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-burger-list" data-bs-toggle="list" href="#list-burger" role="tab" >Double Burger</a>
+                    <a class="list-group-item list-group-item-action" id="list-pizza-list" data-bs-toggle="list" href="#list-pizza" role="tab" >Pizza Pimento</a>
+                    <a class="list-group-item list-group-item-action" id="list-riz-au-poisson-list" data-bs-toggle="list" href="#list-riz-au-poisson" role="tab" >Riz au poisson</a>
+                    <a class="list-group-item list-group-item-action" id="list-mafe-list" data-bs-toggle="list" href="#list-mafe" role="tab" >Mafé</a>
                   </div>
-                  <div class="card col-lg-4 col-md-6 col-sm-12">
-                    <img src="images/pizano.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title">Pizza Pimento</h4>
-                      <p class="card-text">Une pizza savoureuse et épicée, parfaite pour les amateurs de sensations fortes ! Garnie de sauce tomate, de fromage fondant, de viandes ou de légumes frais, et relevée avec une touche, </p>
-                      <a href="#" class="btn btn-primary">Commander</a>
+                </div>
+                <div class="col-lg-9  pt-4">
+                  <div class="tab-content " id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-burger" role="tabpanel" aria-labelledby="list-burger-list">
+                      <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 ">
+                              <h3>Double Burger</h3>
+                              <p>Un délicieux sandwich double couche composé de deux steaks juteux, parfaitement grillés, accompagnés de fromage fondant, de laitue croquante, de tomates fraîches et de sauce</p>
+                              <p class="price">2000 FCFA</p>
+                              <button><a href="">commander</a></button>
+                            </div>
+                            <div class="col-lg-4">
+                              <img src="images/Big-double.jpg" alt="" class="container-fluid p-4 rounded-5" >
+                            </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="card col-lg-4 col-md-6 col-sm-12 " >
-                    <img src="images/thiébou-dieune-696x669.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title">Riz au Poisson</h4>
-                      <p class="card-text">Un plat emblématique composé de riz parfumé et accompagné d’un poisson frais, souvent mijoté dans une sauce savoureuse à base de tomates, d’oignons, de légumes variés et d'épices.</p>
-                      <a href="#" class="btn btn-primary">Commander</a>
+                    <div class="tab-pane fade show " id="list-pizza" role="tabpanel" aria-labelledby="list-pizza-list">
+                      <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 ">
+                              <h3>Pizza Pimento</h3>
+                              <p>Un délicieux sandwich double couche composé de deux steaks juteux, parfaitement grillés, accompagnés de fromage fondant, de laitue croquante, de tomates fraîches et de sauce</p>
+                              <p class="price">2000 FCFA</p>
+                              <button><a href="">commander</a></button>
+                            </div>
+                            <div class="col-lg-4">
+                              <img src="images/pizano.jpg" alt="" class="container-fluid rounded-5 p-4" >
+                            </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="card col-lg-4 col-md-6 col-sm-12 h-75" >
-                    <img src="images/Mafé-boeuf-du-Sénégal.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title">Mafé</h4>
-                      <p class="card-text">Un plat incontournable à base de viande (ou poisson) cuite lentement dans une sauce onctueuse aux arachides, rehaussée de légumes comme le gombo, la carotte ou l’aubergine. Servi avec du riz </p>
-                      <a href="#" class="btn btn-primary">Commander</a>
+                    <div class="tab-pane fade show " id="list-riz-au-poisson" role="tabpanel" aria-labelledby="list-riz-au-poisson-list">
+                      <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 ">
+                              <h3>Riz au poisson</h3>
+                              <p>Un délicieux sandwich double couche composé de deux steaks juteux, parfaitement grillés, accompagnés de fromage fondant, de laitue croquante, de tomates fraîches et de sauce parfaitement grillés, accompagnés de fromage fondant, de laitue croquante, de tomates fraîches et de sauce</p>
+                              <p class="price">2000 FCFA</p>
+                              <button><a href="">commander</a></button>
+                            </div>
+                            <div class="col-lg-4">
+                              <img src="images/thiébou-dieune-696x669.jpg" alt="" class="container-fluid rounded-5 p-4" >
+                            </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="card col-lg-4 col-md-6 col-sm-12 " >
-                    <img src="images/poulet-yassa.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title">Yassa Poulet</h4>
-                      <p class="card-text">Un classique de la cuisine sénégalaise, le Yassa Poulet est composé de morceaux de poulet marinés dans un mélange de citron, d'oignons et d'épices, puis grillés et mijotés dans une sauce .</p>
-                      <a href="#" class="btn btn-primary">Commander</a>
-                    </div>
-                  </div>
-                  <div class="card col-lg-4 col-md-6 col-sm-12 " >
-                    <img src="images/soupou-kandia.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title">Soupou Kandia</h4>
-                      <p class="card-text">Le Soupou Kandia est un ragoût à base de gombo, souvent préparé avec du poisson ou de la viande. Sa sauce épaisse et légèrement visqueuse est parfumée avec des épices locales, des légumes .</p>
-                      <a href="#" class="btn btn-primary">Commander</a>
+                    <div class="tab-pane fade show " id="list-mafe" role="tabpanel" aria-labelledby="list-mafe-list">
+                      <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 ">
+                              <h3>Mafé</h3>
+                              <p>Un délicieux sandwich double couche composé de deux steaks juteux, parfaitement grillés, accompagnés de fromage fondant, de laitue croquante, de tomates fraîches et de sauce</p>
+                              <p class="price">2000 FCFA</p>
+                              <button><a href="">commander</a></button>
+                            </div>
+                            <div class="col-lg-4">
+                              <img src="images/Mafé-boeuf-du-Sénégal.jpeg" alt="" class="container-fluid rounded-5 p-4" >
+                            </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-        
-          </section>
-          <hr>
-          <section id="boisson-dessert" class="boisson-dessert" >
-            <div class="container">
-                <div class="row">
-                    <div class="boisson-item col-lg-6 col-md-12 col-sm-12" id="boisson" >         
-                        <div class="titre-icon">
-                            <i class="fa-solid fa-wine-glass-empty wine"></i>
-                            <h3> Boisson</h3>
-                        </div>
-                        <div class="boisson-prix">
-                            <table>
-                                <tr>
-                                    <td>Margarita classique</td>
-                                    <td>2000 FCFA</td>
-                                </tr>
-                                <tr>
-                                    <td>Cocktail à la manguE</td>
-                                    <td>2000 FCFA</td>
-                                </tr>
-                                <tr>
-                                    <td>Macchiato glacé au caramel</td>
-                                    <td>2000 FCFA</td>
-                                </tr>
-                                <tr>
-                                    <td>Frappuccino au thé vert</td>
-                                    <td>2000 FCFA</td>
-                                </tr>
-                                <tr>
-                                    <td>Smoothie ananas-coco</td>
-                                    <td>2000 FCFA</td>
-                                </tr>
-                                <tr>
-                                    <td>Mojito à la framboise</td>
-                                    <td>2000 FCFA</td>
-                                </tr>
-                                <tr>
-                                    <td>Sparkler aux mûres </td>
-                                    <td>2000 FCFA</td>
-                                </tr>
-                            </table>
-                        </div>
-                    
-                </div>
-                <div class="dessert-item col-lg-6 col-md-12 col-sm-12" id="dessert">
-                        <div class="titre-icon">
-                            <i class="fa-solid fa-cake-candles cake"></i>
-                            <h3>Dessert</h3>
-                        </div>
-                        <div class="dessert-prix">
-                            
-                            <table>
-                                <tr>
-                                    <td>Mousse au chocolat</td>
-                                    <td>2000 FCFA</td>
-                                </tr>
-                                <tr>
-                                    <td>Tarte aux pommes</td>
-                                    <td>2000 FCFA</td>
-                                </tr>
-                                <tr>
-                                    <td>Charlotte aux fraises</td>
-                                    <td>2000 FCFA</td>
-                                </tr>
-                                <tr>
-                                    <td>Tarte aux fruits</td>
-                                    <td>2000 FCFA</td>
-                                </tr>
-                                <tr>
-                                    <td>Tiramisu</td>
-                                    <td>2000 FCFA</td>
-                                </tr>
-                                <tr>
-                                    <td> Gâteau de lave au chocolat</td>
-                                    <td>2000 FCFA</td>
-                                </tr>
-                                <tr>
-                                    <td> Gâteau au fromage</td>
-                                    <td>2000 FCFA</td>
-                                </tr>
-                            </table>
-                        </div>
-                </div>  
-                </div>
             </div>
-           
-        
-    </section>
-          <section>
+          </div>
+          <hr>
+          <div class="nos-boissons" id="nos-boissons">
+            <h2>Nos Boissons</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-bissap-list" data-bs-toggle="list" href="#list-bissap" role="tab" >Jus Bissap</a>
+                    <a class="list-group-item list-group-item-action" id="list-bouye-list" data-bs-toggle="list" href="#list-bouye" role="tab" >Jus Bouye</a>
+                    <a class="list-group-item list-group-item-action" id="list-gingembre-list" data-bs-toggle="list" href="#list-gingembre" role="tab" >Cocktail de Gingembre</a>
+                    <a class="list-group-item list-group-item-action" id="list-tropical-list" data-bs-toggle="list" href="#list-tropical" role="tab" >Smoothie Tropical</a>
+                  </div>
+                </div>
+                <div class="col-lg-9 pt-4">
+                  <div class="tab-content " id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-bissap" role="tabpanel" aria-labelledby="list-bissap-list">
+                      <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 ">
+                              <h3>Jus Bissap</h3>
+                              <p> Une boisson rafraîchissante à base de fleurs d'hibiscus, légèrement sucrée et riche en saveurs exotiques. Idéale pour se désaltérer tout en profitant de ses bienfaits pour la santé.</p>
+                              <p class="price">2000 FCFA</p>
+                              <button><a href="">commander</a></button>
+                            </div>
+                            <div class="col-lg-4">
+                              <img src="images/bissap.png" alt="" class="container-fluid  rounded-5 p-4" >
+                            </div>
+                        </div>
+                      </div>
+                    </div>
 
+
+                    <div class="tab-pane fade show " id="list-bouye" role="tabpanel" aria-labelledby="list-bouye-list">
+                      <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 ">
+                              <h3>Jus Bouye</h3>
+                              <p>Une boisson douce et crémeuse faite à partir du fruit du baobab, mélangée avec du lait ou de l'eau et sucrée selon le goût. Une spécialité africaine riche en vitamines.</p>
+                              <p class="price">2000 FCFA</p>
+                              <button><a href="">commander</a></button>
+                            </div>
+                            <div class="col-lg-4  bgr">
+                              <img src="images/jus-bouye.jpg" alt="" class="container-fluid rounded-5 p-4" >
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="tab-pane fade show " id="list-gingembre" role="tabpanel" aria-labelledby="list-gingembre-list">
+                      <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 ">
+                              <h3>Cocktail de Gingembre</h3>
+                              <p> Un jus énergisant préparé à partir de gingembre frais, rehaussé d'une touche de citron et légèrement sucré. Parfait pour les amateurs de boissons au goût intense.</p>
+                              <p class="price">2000 FCFA</p>
+                              <button><a href="">commander</a></button>
+                            </div>
+                            <div class="col-lg-4">
+                              <img src="images/gingembre.webp" alt="" class="container-fluid rounded-5 p-4" >
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                       
+
+
+
+                    <div class="tab-pane fade show " id="list-tropical" role="tabpanel" aria-labelledby="list-tropical-list">
+                      <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 ">
+                              <h3>Smoothie Tropical</h3>
+                              <p>Un mélange onctueux de fruits tropicaux comme la mangue, la banane, et l'ananas, avec une touche de lait ou de yaourt pour une texture parfaite.</p>
+                              <p class="price">2000 FCFA</p>
+                               <button><a href="">commander</a></button>
+                            </div>
+                            <div class="col-lg-4">
+                              <img src="images/tropical.webp" alt="" class="container-fluid rounded-5 p-4" >
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="nos-desserts" id="nos-desserts">
+            <h2>Nos Desserts</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-bissap-list" data-bs-toggle="list" href="#list-biss" role="tab" >Jus Bissap</a>
+                    <a class="list-group-item list-group-item-action" id="list-bouye-list" data-bs-toggle="list" href="#list-bou" role="tab" >Jus Bouye</a>
+                    <a class="list-group-item list-group-item-action" id="list-gingembre-list" data-bs-toggle="list" href="#list-gingem" role="tab" >Cocktail de Gingembre</a>
+                    <a class="list-group-item list-group-item-action" id="list-tropical-list" data-bs-toggle="list" href="#list-tropi" role="tab" >Smoothie Tropical</a>
+                  </div>
+                </div>
+                <div class="col-lg-9 pt-4">
+                  <div class="tab-content " id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-bissap" role="tabpanel" aria-labelledby="list-bissap-list">
+                      <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 ">
+                              <h3>Jus Bissap</h3>
+                              <p> Une boisson rafraîchissante à base de fleurs d'hibiscus, légèrement sucrée et riche en saveurs exotiques. Idéale pour se désaltérer tout en profitant de ses bienfaits pour la santé.</p>
+                              <p class="price">2000 FCFA</p>
+                              <button><a href="">commander</a></button>
+                            </div>
+                            <div class="col-lg-4">
+                              <img src="images/bissap.png" alt="" class="container-fluid  rounded-full p-4" >
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade show " id="list-bouye" role="tabpanel" aria-labelledby="list-bouye-list">
+                      <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 ">
+                              <h3>Jus Bouye</h3>
+                              <p>Une boisson douce et crémeuse faite à partir du fruit du baobab, mélangée avec du lait ou de l'eau et sucrée selon le goût. Une spécialité africaine riche en vitamines.</p>
+                              <p class="price">2000 FCFA</p>
+                              <button><a href="">commander</a></button>
+                            </div>
+                            <div class="col-lg-4  bgr">
+                              <img src="images/jus-bouye.jpg" alt="" class="container-fluid rounded-5 p-4" >
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade show " id="list-gingembre" role="tabpanel" aria-labelledby="list-gingembre-list">
+                      <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 ">
+                              <h3>Cocktail de Gingembre</h3>
+                              <p> Un jus énergisant préparé à partir de gingembre frais, rehaussé d'une touche de citron et légèrement sucré. Parfait pour les amateurs de boissons au goût intense.</p>
+                              <p class="price">2000 FCFA</p>
+                              <button><a href="">commander</a></button>
+                            </div>
+                            <div class="col-lg-4">
+                              <img src="images/gingembre.webp" alt="" class="container-fluid rounded-5 p-4" >
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade show " id="list-tropical" role="tabpanel" aria-labelledby="list-tropical-list">
+                      <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 ">
+                              <h3>Smoothie Tropical</h3>
+                              <p>Un mélange onctueux de fruits tropicaux comme la mangue, la banane, et l'ananas, avec une touche de lait ou de yaourt pour une texture parfaite.</p>
+                              <p class="price">2000 FCFA</p>
+                               <button><a href="">commander</a></button>
+                            </div>
+                            <div class="col-lg-4">
+                              <img src="images/tropical.webp" alt="" class="container-fluid rounded-5 p-4" >
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
           </section>
 
 
