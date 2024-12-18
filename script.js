@@ -33,6 +33,23 @@ function validateOffer() {
 
 
 
+        function displayOptions(choice) {
+            const boissonOptions = document.getElementById('boisson-options');
+            const dessertOptions = document.getElementById('dessert-options');
+
+            if (choice === 'boisson') {
+                boissonOptions.style.display = 'block';
+                dessertOptions.style.display = 'none';
+            } else if (choice === 'dessert') {
+                boissonOptions.style.display = 'none';
+                dessertOptions.style.display = 'block';
+            } else {
+                boissonOptions.style.display = 'none';
+                dessertOptions.style.display = 'none';
+            }
+        }
+
+
 
 let panier = [];
 

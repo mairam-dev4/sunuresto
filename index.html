@@ -167,13 +167,13 @@
                         <div id="optionsListe">
                             <!-- Options boisson ou dessert seront ici -->
                         </div>
-                        <button class="btn btn-success btn-validate" onclick="validateOffer()">Valider l'offre</button>
-                        <button class="btn btn-success mt-3" onclick="ajouterAuPanier()">Ajouter au Panier</button>
+                        <button class="btn btn-validate bouton-offre" onclick="validateOffer()">Valider l'offre</button>
+                        <button class="btn mt-3 bouton-offre" onclick="ajouterAuPanier()">Ajouter au Panier</button>
                     </div>
                     <div id="panier" class="mt-4">
             <h3>Panier</h3>
             <ul id="panier-list"></ul>
-            <button class="btn btn-primary" onclick="finaliserPanier()">Valider l'offre spéciale</button>
+            <button class="btn bouton-panier" onclick="finaliserPanier()">Valider l'offre spéciale</button>
         </div>
                 </div>
                   </div> 
@@ -183,104 +183,113 @@
         </section>
          <!-- Specials Section -->
     <section id="specials" class="specials section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <div class="specials" id="specials">
         <h2>Spécialités</h2>
-        <div><span>Consultez nos</span> <span class="description-title">Offres spéciales</span></div>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-          <div class="col-lg-3">
-            <ul class="nav nav-tabs flex-column">
-              <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#specials-tab-1">PAELLA</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-2">BISSAP</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-3">DESSERT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-4">BOUYE</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-5">C'EST BON</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-9 mt-4 mt-lg-0">
-            <div class="tab-content">
-              <div class="tab-pane active show" id="specials-tab-1">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>PAELLA</h3>
-                    <p class="description-plat">La Paëlla Sénégalaise est un plat savoureux et généreux, inspiré de la célèbre recette espagnole mais revisité avec des ingrédients et des épices typiques du Sénégal. Ce plat met en valeur un mélange de fruits de mer (crevettes, moules, calamars) ou de poulet, accompagné de riz parfumé aux épices locales comme le poivre noir, le piment doux, et l'ail.</p>
-                    <p class="prix-plat">3000 FCFA</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="images/paella.png" alt="" class="img-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-burger-list" data-bs-toggle="list" href="#list-burger" role="tab" >Double Burger</a>
+                <a class="list-group-item list-group-item-action" id="list-pizza-list" data-bs-toggle="list" href="#list-pizza" role="tab" >Pizza Pimento</a>
+                <a class="list-group-item list-group-item-action" id="list-riz-au-poisson-list" data-bs-toggle="list" href="#list-riz-au-poisson" role="tab" >Riz au poisson</a>
+                <a class="list-group-item list-group-item-action" id="list-mafe-list" data-bs-toggle="list" href="#list-mafe" role="tab" >Mafé</a>
+              </div>
+            </div>
+            <div class="col-lg-9  pt-4">
+              <div class="tab-content " id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-burger" role="tabpanel" aria-labelledby="list-burger-list">
+                  <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 ">
+                          <h3>PAELLA</h3>
+                          <p>La Paëlla Sénégalaise est un plat savoureux et généreux, inspiré de la célèbre recette espagnole mais revisité avec des ingrédients et des épices typiques du Sénégal. Ce plat met en valeur un mélange de fruits de mer (crevettes, moules, calamars) ou de poulet, accompagné de riz parfumé aux épices locales comme le poivre noir, le piment doux, et l'ail.</p>
+                          <p class="price">3000 FCFA</p>
+                          <button><a href="">commander</a></button>
+                        </div>
+                        <div class="col-lg-4">
+                          <img src="images/paella.png" alt="" class="container-fluid" >
+                        </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="tab-pane" id="specials-tab-2">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>BISSAP</h3>
-                    <p class="description-plat">La Paëlla Sénégalaise est un plat savoureux et généreux, inspiré de la célèbre recette espagnole mais revisité avec des ingrédients et des épices typiques du Sénégal. Ce plat met en valeur un mélange de fruits de mer (crevettes, moules, calamars) ou de poulet, accompagné de riz parfumé aux épices locales comme le poivre noir, le piment doux, et l'ail.</p>
-                    <p class="prix-plat">3000 FCFA</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="images/bissap.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="specials-tab-3">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>DESSERT</h3>
-                    <p class="description-plat">La Paëlla Sénégalaise est un plat savoureux et généreux, inspiré de la célèbre recette espagnole mais revisité avec des ingrédients et des épices typiques du Sénégal. Ce plat met en valeur un mélange de fruits de mer (crevettes, moules, calamars) ou de poulet, accompagné de riz parfumé aux épices locales comme le poivre noir, le piment doux, et l'ail.</p>
-                    <p class="prix-plat">3000 FCFA</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="images/paella.png" alt="" class="img-fluid">
+                <div class="tab-pane fade show " id="list-pizza" role="tabpanel" aria-labelledby="list-pizza-list">
+                  <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 ">
+                          <h3>PAELLA</h3>
+                          <p>La Paëlla Sénégalaise est un plat savoureux et généreux, inspiré de la célèbre recette espagnole mais revisité avec des ingrédients et des épices typiques du Sénégal. Ce plat met en valeur un mélange de fruits de mer (crevettes, moules, calamars) ou de poulet, accompagné de riz parfumé aux épices locales comme le poivre noir, le piment doux, et l'ail.</p>
+                          <p class="price">3000 FCFA</p>
+                          <button><a href="">commander</a></button>
+                        </div>
+                        <div class="col-lg-4">
+                          <img src="images/paella.png" alt="" class="container-fluid rounded-5 p-4" >
+                        </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="tab-pane" id="specials-tab-4">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>BOUYE</h3>
-                    <p class="description-plat">La Paëlla Sénégalaise est un plat savoureux et généreux, inspiré de la célèbre recette espagnole mais revisité avec des ingrédients et des épices typiques du Sénégal. Ce plat met en valeur un mélange de fruits de mer (crevettes, moules, calamars) ou de poulet, accompagné de riz parfumé aux épices locales comme le poivre noir, le piment doux, et l'ail.</p>
-                    <p class="prix-plat">3000 FCFA</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="images/paella.png" alt="" class="img-fluid">
+                <div class="tab-pane fade show " id="list-riz-au-poisson" role="tabpanel" aria-labelledby="list-riz-au-poisson-list">
+                  <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 ">
+                          <h3>Riz au poisson</h3>
+                          <p>Un délicieux sandwich double couche composé de deux steaks juteux, parfaitement grillés, accompagnés de fromage fondant, de laitue croquante, de tomates fraîches et de sauce parfaitement grillés, accompagnés de fromage fondant, de laitue croquante, de tomates fraîches et de sauce</p>
+                          <p class="price">2000 FCFA</p>
+                          <button><a href="">commander</a></button>
+                        </div>
+                        <div class="col-lg-4">
+                          <img src="images/thiébou-dieune-696x669.jpg" alt="" class="container-fluid rounded-5 p-4" >
+                        </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="tab-pane" id="specials-tab-5">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>C'EST BON</h3>
-                    <p class="description-plat">La Paëlla Sénégalaise est un plat savoureux et généreux, inspiré de la célèbre recette espagnole mais revisité avec des ingrédients et des épices typiques du Sénégal. Ce plat met en valeur un mélange de fruits de mer (crevettes, moules, calamars) ou de poulet, accompagné de riz parfumé aux épices locales comme le poivre noir, le piment doux, et l'ail.</p>
-                    <p class="prix-plat">3000 FCFA</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="images/paella.png" alt="" class="img-fluid">
+                <div class="tab-pane fade show " id="list-mafe" role="tabpanel" aria-labelledby="list-mafe-list">
+                  <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 ">
+                          <h3>Mafé</h3>
+                          <p>Un délicieux sandwich double couche composé de deux steaks juteux, parfaitement grillés, accompagnés de fromage fondant, de laitue croquante, de tomates fraîches et de sauce</p>
+                          <p class="price">2000 FCFA</p>
+                          <button><a href="">commander</a></button>
+                        </div>
+                        <div class="col-lg-4">
+                          <img src="images/Mafé-boeuf-du-Sénégal.jpeg" alt="" class="container-fluid rounded-5 p-4" >
+                        </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
-
     </section> 
+    <!-- Galerie Section -->
+  <section id="gallery" class="container">
+    <div class="container mt-5">
+      <h2>Galerie</h2>
+      <div class="row text-center">
+          <div class="col-md-4 mb-4">
+              <img src="https://via.placeholder.com/300x200" alt="Image 1" class="img-fluid rounded">
+          </div>
+          <div class="col-md-4 mb-4">
+              <img src="https://via.placeholder.com/300x200" alt="Image 2" class="img-fluid rounded">
+          </div>
+          <div class="col-md-4 mb-4">
+              <img src="https://via.placeholder.com/300x200" alt="Image 3" class="img-fluid rounded">
+          </div>
+          <div class="col-md-4 mb-4">
+              <img src="https://via.placeholder.com/300x200" alt="Image 4" class="img-fluid rounded">
+          </div>
+          <div class="col-md-4 mb-4">
+              <img src="https://via.placeholder.com/300x200" alt="Image 5" class="img-fluid rounded">
+          </div>
+          <div class="col-md-4 mb-4">
+              <img src="https://via.placeholder.com/300x200" alt="Image 6" class="img-fluid rounded">
+          </div>
+      </div>
+  </div>
+  </section>
+    <br>
     <section class="resrvation d-flex align-items-center justify-content-center py-xxl-5" id="reservation">
       <form action="page.php" method="post" class="formulaire  mx-auto  p-5 shadow rounded">
         <h2 class="text-center mb-4">Réservez votre table</h2>

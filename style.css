@@ -110,6 +110,14 @@ h2{
     margin: 10px;
 }
 
+.bouton-offre{
+    background-color: #FFC107;
+}
+
+.bouton-panier{
+    background-color: #FF4500;
+}
+
 .list-group-item:active{
     background-color: #FFC107;
 }
