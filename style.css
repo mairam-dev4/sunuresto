@@ -91,6 +91,12 @@ h2{
     text-decoration-color: #ff4500;
     text-decoration-thickness: 3px;
 }
+/*MENU*/
+
+.card-img-top{
+    max-height: 392px;
+}
+
 /*offre special*/
 
 .separateur{
