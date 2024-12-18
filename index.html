@@ -195,7 +195,7 @@
     <section class="galarie py-xxl-5" id="galarie">
       
       <div class="container">
-        <h2>GALARIE</h2>
+        <h2>GALERIE</h2>
         <h4 class="text-center pt-4">Une Plongée Visuelle dans l’Univers de SunuResto</h4>
         <p class="text-center">Explorez nos plats savoureux, notre ambiance chaleureuse et le savoir-faire qui fait notre fierté.</p>
         <div class="row  ">
@@ -315,52 +315,55 @@
 
 
     <section class="resrvation d-flex align-items-center justify-content-center py-xxl-5" id="reservation">
-      <form action="page.php" method="post" class="formulaire  mx-auto  p-5 shadow rounded">
-        <h2 class="text-center mb-4">Réservez votre table</h2>
+      <div class="container ">
+        
+      <form action="page.php" method="post" class="formulaire  mx-auto  p-4 shadow rounded  col-lg-8 col-md-6 col-sm-12">
+        <h2 class="text-center mb-4">Réservez votre table</h2> 
 
 
         <div class="row ">
-              <div class="col-lg-6 col-sm-12 mb-3">
+              <div class="col-lg-4 col-sm-12 ">
                  <label for="prenom" class="form-label">Prenom</label>
                  <input type="text" class="form-control" placeholder="Entrer votre prenom" required>
               </div>
-              <div class="col-lg-6 col-sm-12 mb-3">
+              <div class="col-lg-4 col-sm-12 ">
                 <label for="nom" class="form-label">Nom</label>
                 <input type="text" class="form-control" placeholder="Entre votre nom " required>
              </div>
              
+             <div class="col-lg-4 col-sm-12">
+              <label for="date-reservation" class="form-label">Date de la réservation</label>
+              <input type="date" class="form-control" id="date-reservation" name="date" required>
+             </div>
+
           </div>
 
-          <div class="row">
-            <div class="col-lg-6 col-sm-12">
-             <label for="date-reservation" class="form-label">Date de la réservation</label>
-             <input type="date" class="form-control" id="date-reservation" name="date" required>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-              <label for="heure-reservation" class="form-label">Heure de la réservation</label>
-              <input type="time" class="form-control" id="heure-reservation" name="time" required>
-            </div>
-          </div>
           
           <div class="row ">
-            <div class="mt-3 col-lg-6 col-sm-12" >
+            <div class="col-lg-4 col-sm-12">
+              <label for="heure-reservation" class="form-label">Heure de la réservation</label>
+              <input type="time" class="form-control" id="heure-reservation" name="time" required>
+            </div> 
+
+
+            <div class=" col-lg-4 col-sm-12" >
               <label for="email" class="form-label">Adresse email</label>
               <input type="email" class="form-control" id="email" name="email" placeholder="Ex : exemple@email.com" required>
             </div>
-            <div class="col-lg-6 col-sm-12 mt-3">
+            <div class="col-lg-4 col-sm-12 ">
               <label for="telephone" class="form-label">Numéro de téléphone</label>
               <input type="tel" class="form-control" id="telephone" name="phone" placeholder="Ex : +221 77 123 45 67" required>
            </div>
           </div>
           
           <div class="row">
-            <div class="col-lg-12 mt-3">
+            <div class="col-lg-12 ">
               <label for="nombre-personnes" class="form-label">Nombre de personnes</label>
               <input type="number" class="form-control" id="nombre-personnes" name="guests" min="1" max="30" required>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-12 mt-4 ">
+            <div class="col-lg-12  ">
               <textarea class="form-control textra " placeholder="Votre message" id="floatingTextarea"></textarea>
              
             </div>
@@ -372,6 +375,7 @@
           
           </div>
       </form>
+    </div>
     </section>
 
     
