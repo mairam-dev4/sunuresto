@@ -84,3 +84,4 @@ function finaliserPanier() {
     panier = [];
     afficherPanier();
 }
+
