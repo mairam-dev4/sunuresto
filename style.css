@@ -277,19 +277,71 @@ border: #FFC107;
 
 
 
-  .carousel{
+  .galarie .carousel{
     height: 300px;
     overflow: hidden;
 }
-.carousel-inner img{
+.galarie .carousel-inner img{
        
           height: 300px;
         object-fit: cover;
       
 }
-.carousel-inner{
+.galarie .carousel-inner{
     height:488px;
   
+}
+
+
+/* style TEMOIGNAGES */
+.testimonials-section{
+    background: linear-gradient(to left, #f3bd50, #FFFFFF); 
+	color: #fff;
+}
+
+.wrapper {
+	padding: 80px 0;
+}
+.section-header {
+	padding-bottom: 15px;
+}
+.section-header h2 {
+	font-weight: 700;
+}
+.icon-area {
+	text-align: center;
+}
+.icon-area i {
+	font-size: 80px;
+	margin-bottom: 20px;
+}
+.content p {
+	width: 60%;
+	margin: auto;
+}
+.img-area {
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: auto;
+	overflow: hidden;
+    border: 10px ridge #FF4500;
+	margin-bottom: 30px;
+}
+.img-area img {
+	width: 100%;
+}
+.content h5 {
+	font-weight: 900;
+	margin-top: 15px;
+}
+.carousel-indicators {
+	bottom: -80px;
+}
+.carousel-indicators [data-bs-target] {
+	width: 60px;
+	height: 10px;
+	background-color: #FF4500;
 }
 
 
