@@ -146,9 +146,7 @@ h2{
     padding: 0px 120px;
 }
 /*RESERVATION*/
-.formulaire{
-    width: 80%;
-}
+
 .textra {
     height: 140px;
     
@@ -281,7 +279,6 @@ border: #FFC107;
 .testimonials-section{
     background: linear-gradient(to left, #f3bd50, #FFFFFF); 
 	color: #fff;
-    width: 80%;
 }
 
 .wrapper {
@@ -336,7 +333,6 @@ border: #FFC107;
    /*contact*/
    .formulaire-contact{
     margin:auto;
-    width: 80%;
     
    }
    .formulaire-contact a{
