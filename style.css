@@ -96,6 +96,14 @@ h2{
 .card-img-top{
     max-height: 392px;
 }
+.menu{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
 
 /*offre special*/
 
@@ -132,6 +140,15 @@ h2{
     color: black; 
     font-weight: bold;
     border-color: #ff4500; 
+}
+.offre-special{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+padding: 0px 24px;
 }
 
 /*MENU PAGE 2 */
@@ -273,7 +290,13 @@ border: #FFC107;
     height:488px;
   
 }
-
+.galarie{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
 
 /* style TEMOIGNAGES */
 .testimonials-section{
