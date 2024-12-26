@@ -65,7 +65,7 @@
                   <h1 class="nom-restaurant display-1 text-white">SUNURESTO</h1>
                   <p class="slogan text-white  m-4">Avec SunuResto, chaque repas est une célébration des saveurs et du partage.</p>
                    <div class=" bouton d-flex flex-column flex-sm-row gap-4 align-items-center  justify-content-center">
-                    <button class="btn btn-commander  "><a href="#" >JE PASSE MA COMMANDE</a></button>
+                    <button class="btn btn-commander  "><a href="#commander" >JE PASSE MA COMMANDE</a></button>
                     <button class="btn btn-contacter "><a href="#contact" >NOUS-CONTACTER</a></button>
                    </div>        
                 </div> 
@@ -143,7 +143,7 @@
                       <img src="images/jus-bouye.png" class="card-img-top img-fluid" alt="...">
                       <div class="card-body">
                         <h4 class="card-title">Jus Bouye</h4>
-                        <p class="card-text">Découvrez notre jus exotique de bouye pour une sensation tropicale rafraîchissante !Une boisson douce et crémeuse faite à partir du fruit du baobab, mélangée avec du lait ou de l'eau et sucrée selon le goût. Une spécialité africaine riche en vitamines.</p>
+                        <p class="card-text">Découvrez notre jus exotique de bouye !Une boisson douce et crémeuse faite à partir du fruit du baobab, mélangée avec du lait ou de l'eau et sucrée selon le goût. Une spécialité africaine riche en vitamines.</p>
                         <p class="price">2000 FCFA</p>
                         <a href="#" class="btn btn-primary">commander</a>
                       </div>
@@ -198,58 +198,62 @@
 
 
         <!-- COMMANDER Section --> 
-<section class="commander py-4">
-  <div class="container-fluid box-cta text-center">
-    <p>Commandez dès maintenant et laissez-nous ravir vos papilles avec nos délicieux plats</p>
-    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commandeModal">COMMANDER MAINTENANT</button>
-  </div>
-
-  <!-- Popup Commande -->
-  <div class="modal fade" id="commandeModal" tabindex="-1" aria-labelledby="commandeModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="commandeModalLabel">Sélectionnez votre commande</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>Choisissez vos plats ici. Ajouter un plat, une boisson, ou un dessert.</p>
-          <!-- Example: Form to select items -->
-          <form id="commandeForm">
-            <div class="mb-3">
-              <label for="plat" class="form-label">Plat</label>
-              <select class="form-select" id="plat">
-                <option>Paëlla</option>
-                <option>Pizza</option>
-                <option>Salade</option>
-              </select>
+        <section class="commander py-4" id="commander">
+          <div class="container-fluid box-cta text-center">
+            <p>Commandez dès maintenant et laissez-nous ravir vos papilles avec nos délicieux plats</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commandeModal">COMMANDER MAINTENANT</button>
+          </div>
+        
+          <!-- Popup Commande -->
+          <div class="modal fade" id="commandeModal" tabindex="-1" aria-labelledby="commandeModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="commandeModalLabel">Sélectionnez votre commande</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Choisissez vos plats ici. Ajouter un plat, une boisson, ou un dessert.</p>
+                  <!-- Formulaire pour sélectionner les éléments -->
+                  <form id="commandeForm">
+                    <div class="mb-3">
+                      <label for="plat" class="form-label">Plat</label>
+                      <select class="form-select" id="plat">
+                        <option>Choisissez un plat</option>
+                        <option>Paëlla</option>
+                        <option>Pizza</option>
+                        <option>Salade</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="boisson" class="form-label">Boisson</label>
+                      <select class="form-select" id="boisson">
+                        <option>Choisissez une boisson</option>
+                        <option>Cola</option>
+                        <option>Eau</option>
+                        <option>Jus d'orange</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="dessert" class="form-label">Dessert</label>
+                      <select class="form-select" id="dessert">
+                        <option>Choisissez un dessert</option>
+                        <option>Gâteau au chocolat</option>
+                        <option>Crème brûlée</option>
+                        <option>Tarte aux fruits</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                  <button type="button" class="btn btn-primary" id="validerCommandeBtn">Valider la commande</button>
+                </div>
+              </div>
             </div>
-            <div class="mb-3">
-              <label for="boisson" class="form-label">Boisson</label>
-              <select class="form-select" id="boisson">
-                <option>Cola</option>
-                <option>Eau</option>
-                <option>Jus d'orange</option>
-              </select>
-            </div>
-            <div class="mb-3">
-              <label for="dessert" class="form-label">Dessert</label>
-              <select class="form-select" id="dessert">
-                <option>Gâteau au chocolat</option>
-                <option>Crème brûlée</option>
-                <option>Tarte aux fruits</option>
-              </select>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-          <button type="button" class="btn btn-primary" id="validerCommandeBtn">Valider la commande</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+          </div>
+        </section>
+        
 
     
       

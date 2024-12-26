@@ -72,19 +72,35 @@ function updateOptions() {
   
   
 // SECTION COMMANDER
-  document.getElementById("validerCommandeBtn").addEventListener("click", function() {
-    // Get values from form inputs
+document.getElementById("validerCommandeBtn").addEventListener("click", function() {
+    // Récupérer les valeurs des inputs de sélection
     const plat = document.getElementById("plat").value;
     const boisson = document.getElementById("boisson").value;
     const dessert = document.getElementById("dessert").value;
     
-    // Create a confirmation message
-    const confirmationMessage = `Vous avez commandé:\nPlat: ${plat}\nBoisson: ${boisson}\nDessert: ${dessert}`;
+    // Initialiser le message de confirmation
+    let confirmationMessage = "Vous avez commandé :\n";
     
-    // Optionally: You can alert the user or use any other method to show this message
+    // Vérifier et ajouter les éléments sélectionnés au message de confirmation
+    if (plat !== "Choisissez un plat") {
+      confirmationMessage += `Plat: ${plat}\n`;
+    }
+    if (boisson !== "Choisissez une boisson") {
+      confirmationMessage += `Boisson: ${boisson}\n`;
+    }
+    if (dessert !== "Choisissez un dessert") {
+      confirmationMessage += `Dessert: ${dessert}\n`;
+    }
+    
+    // Si rien n'est sélectionné, afficher un message différent
+    if (plat === "Choisissez un plat" && boisson === "Choisissez une boisson" && dessert === "Choisissez un dessert") {
+      confirmationMessage = "Vous n'avez rien sélectionné.";
+    }
+    
+    // Afficher le message de confirmation
     alert(confirmationMessage);
     
-    // Close the modal
+    // Fermer le modal
     const modal = new bootstrap.Modal(document.getElementById('commandeModal'));
     modal.hide();
-  });
+});
