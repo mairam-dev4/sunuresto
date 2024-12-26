@@ -276,7 +276,7 @@ border: #FFC107;
     opacity: 2; 
   }
   .text {
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     padding: 10px;
     font-weight: lighter;
@@ -444,7 +444,7 @@ border: #FFC107;
         gap: 10px;
         
        }   
-    .reso, .liens, .sunu {
+    .reso, .liens, .sunu, .reservation, .contact {
         width: 100%;
        }
    
